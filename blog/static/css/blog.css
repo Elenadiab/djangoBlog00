@@ -1,8 +1,22 @@
+.navbar a {
+    color: #057eee;
+}
+
+#logo {
+    font-family: 'Lobster', cursive; 
+    text-decoration: underline;
+    color: #f520b5;  
+}
+
+
+
+
 .page-header {
-    background-color: #C25100;
+    background-color: #f520b5;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+    
 }
 
 .page-header h1,
@@ -12,17 +26,36 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    text-align: center;
 }
+
+
+main {
+    background-image: url('../img/fotoragazzadjango.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    
+}
+
 
 h1,
 h2,
 h3,
 h4 {
     font-family: 'Lobster', cursive;
+    color: #057eee;
+}
+
+
+.bg-semitrasp {
+    background-color: rgba(255, 255, 255, 0.5)
 }
 
 .date {
     color: #828282;
+    
 }
 
 .save {
@@ -39,9 +72,14 @@ h4 {
 .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 16pt;
     margin-right: 20px;
+    margin-top: 12px ;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
 }
+
+
 
 .post {
     margin-bottom: 70px;
@@ -49,7 +87,9 @@ h4 {
 
 .post h2 a,
 .post h2 a:visited {
-    color: #000000;
+    color: #057eee;
+    text-decoration: none;
+    
 }
 
 .post > .date,
@@ -59,13 +99,13 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #C25100;
+    color: #f520b5;
     background: none;
-    border-color: #C25100;
+    border-color:#f520b5
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color:#f520b5;
 }
 
