@@ -31,9 +31,9 @@
 
 
 main {
-    background-image: url('../img/fotoragazzadjango.jpg');
+    /* background-image: url('../img/fotoragazzadjango.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
     height: 100vh;
     
