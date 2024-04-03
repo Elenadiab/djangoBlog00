@@ -3,7 +3,7 @@
 {% block content %}
 
 
-    <div class="container">
+    <div class="container bg-pink">
         <div class="row">
             {% for post in posts %}
             
@@ -21,8 +21,13 @@
                                         </div>
                                         
                                     </div>
-                                    <img src="/static/img/post-2.jpg" alt="Post Thumbnail" class="w-100">
-                                    <div class="card-body px-0 pb-0">
+                                    {% if post.img %}
+                                        <img src= "{{ post.img.url }}"alt="Post Thumbnail" class="w-100">
+                                    {% else %}
+                                        <img src="/static/img/post-2.jpg" alt="Post Thumbnail" class="w-100">
+
+                                        {% endif %}
+                                        <div class="card-body px-0 pb-0">
                                         
                                         <h2><a  class="post-title" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                                         <p class="card-text">{{ post.text|linebreaksbr }}</p>

@@ -42,13 +42,15 @@
 
 
 /* main {
-    background-image: url('../img/fotoragazzadjango.jpg');
+    background-color: #f520b5;
     background-size: cover;
-    background-repeat: no-repeat;
+    
 
     height: 100vh;
     
 } */
+
+
 
 
 h1,
@@ -58,6 +60,10 @@ h4 {
     font-family: 'Lobster', cursive;
     color: #057eee;
 }
+
+
+
+
 
 
 /* .bg-semitrasp {
@@ -329,4 +335,22 @@ a.post-title:hover {
   .content pre {
     padding: 10px 20px;
     background: #F6F6F6;
+  }
+
+
+
+
+
+  .btn-secondary {
+    color: #fff;
+    background-color: #f520b5;
+    border-color: #ee00a7;
+   
+
+  }
+
+  .btn-secondary:hover{
+    color: #fff;
+    background-color: #057eee;
+    border-color: #006fd6;
   }
