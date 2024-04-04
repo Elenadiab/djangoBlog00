@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-            <article class="post">
+    <article class="post">
+        <div class="row">
+            <div class="col-lg-6">
                 {% if post.published_date %}
                 <time class="date">
                     {{ post.published_date }}
@@ -19,16 +19,32 @@
                     {% include './icons/pencil-fill.svg' %} Modifica</a>
                     {% endif %}                
                 </aside>
-                <div class="col-lg-6">
-                    {% if post.img %}
-                            <img src= "{{ post.img.url }}"alt="Post Thumbnail" class="w-100">
-                        {% else %}
-                            <img src="/static/img/post-2.jpg" alt="Post Thumbnail" class="w-100">
-                    {% endif %}
-                </div>
-            
-            </article>
+            </div>
+            <div class="col-lg-6">
+                {% if post.img %}
+                <img src= "{{ post.img.url }}"alt="Post Thumbnail" class="w-100">
+                {% else %}
+                <img src="/static/img/post-2.jpg" alt="Post Thumbnail" class="w-100">
+                {% endif %}
+            </div>
         </div>
-    </div>
+    </article>
 </div>
+
+
+
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
